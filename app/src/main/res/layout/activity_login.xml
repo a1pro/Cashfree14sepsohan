@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:focusableInTouchMode="true"
+    android:fitsSystemWindows="true"
+    android:layout_alignParentBottom="true"
+    android:background="@color/white"
+    tools:context=".Activities.SignUpActivity">
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressbar"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/register"/>
+
+    <TextView
+        android:id="@+id/iv_reg_static"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registration"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/iv_logo"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/tv_static"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please enter your mobile number, then we will send OTP to verify"
+        android:textSize="18sp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/iv_reg_static" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_below="@+id/tv_static">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="15dp"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:padding="10dp"
+                android:drawablePadding="20dp"
+                android:background="@drawable/edittext_backg"
+                android:hint="Full Name"
+                android:textColorHint="@color/black"
+                android:imeOptions="actionNext"
+                android:paddingLeft="2dp" />
+
+
+
+            <EditText
+                android:id="@+id/et_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="15dp"
+                android:textColorHint="@color/black"
+                android:padding="10dp"
+                android:drawablePadding="20dp"
+                android:inputType="phone"
+                android:background="@drawable/edittext_backg"
+                android:hint="JM+1 (876)"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:paddingLeft="2dp" />
+
+
+
+            <EditText
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="15dp"
+                android:padding="10dp"
+                android:drawablePadding="20dp"
+                android:background="@drawable/edittext_backg"
+                android:textColorHint="@color/black"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:paddingLeft="2dp" />
+
+
+
+            <Button
+                android:id="@+id/bt_sigin"
+                android:layout_width="200dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/button_back"
+                android:text="CONTINUE"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Already have an account?"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_signup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sign in"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

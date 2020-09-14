@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.BalanceFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/white"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <ImageView
+                        android:id="@+id/iv_scan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:padding="10dp"
+                        android:visibility="gone"
+                        android:src="@mipmap/scanner" />
+
+                    <TextView
+                        android:id="@+id/title_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="Add Money to Wallet"
+                        android:textColor="@color/red"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                       </RelativeLayout>
+
+            </androidx.appcompat.widget.Toolbar>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/red" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                  <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="20dp">
+
+                        <TextView
+                            android:id="@+id/txt_static_bal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginLeft="20dp"
+                            android:text="Wallet Balance"
+                            android:textColor="@color/red"
+                            android:textSize="18sp" />
+
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/txt_amount1"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_below="@+id/txt_static_bal"-->
+<!--                            android:layout_gravity="center_horizontal"-->
+<!--                            android:layout_marginLeft="20dp"-->
+<!--                            android:layout_marginTop="20dp"-->
+<!--                            android:text="Amount : $ 0"-->
+<!--                            android:textColor="@color/red"-->
+<!--                            android:textSize="18sp" />-->
+
+
+
+                        <Spinner
+                            android:id="@+id/spinner_card_list"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_margin="10dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.502"
+                            app:layout_constraintStart_toStartOf="parent"
+                            android:visibility="visible"
+                            android:layout_below="@+id/txt_static_bal"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.498" />
+
+
+                        <TextView
+                            android:id="@+id/txt_account_holder"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/spinner_card_list"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginLeft="20dp"
+                            android:visibility="invisible"
+                            android:text="Card holder name :"
+                            android:textColor="@color/red"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/et_amount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txt_account_holder"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="15dp"
+                            android:background="@drawable/edittext_backg"
+                            android:hint="Enter amount"
+                            android:imeOptions="actionDone"
+                            android:inputType="number"
+                            android:maxLines="1"
+                            android:padding="15dp"
+                            android:paddingLeft="2dp"
+                            android:singleLine="true" />
+
+
+                        <Button
+                            android:id="@+id/btn_add"
+                            android:layout_width="200dp"
+                            android:layout_height="45dp"
+                            android:layout_below="@+id/et_amount"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="30dp"
+                            android:background="@drawable/button_back"
+                            android:text="Add Money"
+                            android:textAllCaps="false"
+                            android:layout_marginBottom="10dp"
+                            android:textColor="@color/white" />
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

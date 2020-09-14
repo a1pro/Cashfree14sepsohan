@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.GeneratePinActivity">
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:id="@+id/progressbar"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back"
+            android:visibility="visible"
+            android:layout_margin="15dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Generate PIN"
+            android:textSize="16sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_gravity="center"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/red"/>
+
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pin_label_text"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/pin_label_margin" />
+
+    <LinearLayout android:id="@+id/pin_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal">
+
+        <EditText android:id="@+id/pin_first_edittext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="15dp"
+            android:background="@drawable/edittext_backg"
+            android:contentDescription="@string/pin_content_desc"
+            style="@style/pin_edittext_style" />
+
+        <EditText android:id="@+id/pin_second_edittext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="15dp"
+            android:background="@drawable/edittext_backg"
+            android:contentDescription="@string/pin_content_desc"
+            style="@style/pin_edittext_style" />
+
+        <EditText android:id="@+id/pin_third_edittext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/edittext_backg"
+            android:contentDescription="@string/pin_content_desc"
+            style="@style/pin_edittext_style" />
+
+        <EditText android:id="@+id/pin_forth_edittext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="15dp"
+            android:background="@drawable/edittext_backg"
+            android:contentDescription="@string/pin_content_desc"
+            style="@style/pin_edittext_style" />
+
+        <EditText android:id="@+id/pin_fifth_edittext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/edittext_backg"
+            android:contentDescription="@string/pin_content_desc"
+            style="@style/pin_edittext_style" />
+    </LinearLayout>
+
+    <EditText android:id="@+id/pin_hidden_edittext"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:background="@null"
+        android:inputType="phone"
+        android:cursorVisible="false"
+        android:password="true"
+        android:maxLength="5"
+        android:textColor="#00000000"
+        android:contentDescription="@string/pin_content_desc" />
+
+
+    <Button
+        android:id="@+id/bt_Pin"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_back"
+        android:text="Add PIN"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+</LinearLayout>
+
+</RelativeLayout>

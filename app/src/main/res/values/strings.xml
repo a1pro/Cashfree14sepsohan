@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">RE PAY</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="card_header">NFN CARD</string>
+    <string name="card_number_sample">XXXX XXXX XXXX XXXX</string>
+    <string name="card_validity_label">VALID UPTO</string>
+    <string name="card_validity_sample">MMYY</string>
+    <string name="card_name_sample">CARD HOLDER</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="card_holders_name">Card Holder\'s Name</string>
+    <string name="card_number">Card Number</string>
+    <string name="card_validity">Expires</string>
+    <string name="card_cvv">CVV/CVC Number</string>
+
+    <string name="pin_content_desc">PIN input field</string>
+    <string name="pin_label_text">PIN</string>
+
+    <string-array name="array_name">
+        <item>Savings *********4590</item>
+        <item>Savings *********4596</item>
+        <item>Savings *********4000</item>
+    </string-array>
+
+    <string-array name="array_account">
+        <item>Select</item>
+        <item>Beneficiary Name 1</item>
+        <item>Beneficiary Name 2</item>
+        <item>Beneficiary Name 3</item>
+        <item>Beneficiary Name 4</item>
+        <item>Beneficiary Name 5</item>
+
+    </string-array>
+</resources>

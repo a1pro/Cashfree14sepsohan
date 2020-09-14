@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.AddMoneyActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#13C107"
+        android:textSize="22sp"
+        android:layout_gravity="center"
+        android:text="SUCCESS"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:src="@mipmap/success"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginLeft="20dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:text="MY E-WALLET"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:text="9:00 PM"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:text="DETAILS"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_stat_from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="From"
+            android:layout_alignParentLeft="true"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/tv_from_val"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Debit Card *******4590"
+            android:layout_alignParentRight="true"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"/>
+
+
+
+        <TextView
+            android:id="@+id/tv_stat_to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To"
+            android:layout_below="@+id/tv_from_val"
+            android:layout_alignParentLeft="true"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MY E-Wallet"
+            android:layout_alignParentRight="true"
+            android:textSize="18sp"
+            android:layout_below="@+id/tv_from_val"
+            android:textColor="@color/black"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/tv_stat_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Amount"
+            android:layout_below="@+id/tv_stat_to"
+            android:layout_alignParentLeft="true"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$100"
+            android:layout_alignParentRight="true"
+            android:textSize="18sp"
+            android:layout_below="@+id/tv_stat_to"
+            android:textColor="@color/black"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"/>
+
+
+
+        <TextView
+            android:id="@+id/tv_stat_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Amount"
+            android:layout_below="@+id/tv_stat_amount"
+            android:layout_alignParentLeft="true"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="---"
+            android:layout_alignParentRight="true"
+            android:textSize="18sp"
+            android:layout_below="@+id/tv_stat_message"
+            android:textColor="@color/black"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/tv_trans_fee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Amount"
+            android:layout_below="@+id/tv_stat_amount"
+            android:layout_alignParentLeft="true"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="---"
+            android:layout_alignParentRight="true"
+            android:textSize="18sp"
+            android:layout_below="@+id/tv_stat_amount"
+            android:textColor="@color/black"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"/>
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/tv_trans_fee"
+            android:src="@mipmap/tick"/>
+
+
+
+
+
+
+    </RelativeLayout>
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

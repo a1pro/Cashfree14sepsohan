@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/scannerFragment"
+        android:name="com.app.cashfree.Fragments.ScannerFragment"
+        android:label="fragment_balance"
+        tools:layout="@layout/fragment_scanner" />
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.app.cashfree.Fragments.SettingFragment"
+        android:label="Fragments.SettingFragment"
+        tools:layout="@layout/fragment_setting" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.app.cashfree.Fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+</navigation>

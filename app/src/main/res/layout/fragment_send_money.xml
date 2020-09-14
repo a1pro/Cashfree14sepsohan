@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.SendMoneyFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="50dp"
+        android:orientation="vertical">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+                 <TextView
+                android:id="@+id/title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:text="Money Transfer"
+                android:layout_centerInParent="true"
+                android:textColor="@color/red"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/red"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bank Transfer"
+                android:textStyle="bold"
+                android:layout_marginLeft="15dp"
+               android:layout_marginTop="15dp"
+                android:textColor="@color/colorPrimaryDark"/>
+
+
+            <EditText
+                android:id="@+id/et_benid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:editable="false"
+                android:layout_marginTop="20dp"
+                android:hint="Enter Beneficiary Nick Name"
+                android:background="@drawable/edittext_backg"
+                android:layout_marginRight="15dp"/>
+
+            <EditText
+                android:id="@+id/et_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:layout_marginTop="10dp"
+                android:hint="Enter Amount"
+                android:inputType="number"
+                android:background="@drawable/edittext_backg"
+                android:layout_marginRight="15dp"/>
+
+
+            <EditText
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:editable="false"
+                android:maxLines="1"
+                android:layout_marginTop="10dp"
+                android:hint="Enter Name"
+                android:background="@drawable/edittext_backg"
+                android:layout_marginRight="15dp"/>
+
+
+            <Button
+                android:id="@+id/bt_name"
+                android:layout_width="140dp"
+                android:layout_height="35dp"
+                android:text="Transfer"
+                android:textAllCaps="false"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/button_back"
+                android:textColor="@color/white"/>
+
+
+        </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/red"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wallet Transfer"
+            android:textStyle="bold"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <Spinner
+            android:id="@+id/spinner_card_list"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.498" />
+
+        <EditText
+            android:id="@+id/et_wallet_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:layout_marginTop="10dp"
+            android:hint="Enter Wallet Number"
+            android:background="@drawable/edittext_backg"
+            android:layout_marginRight="15dp"/>
+        <EditText
+            android:id="@+id/et_amount1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:inputType="number"
+            android:maxLines="1"
+            android:layout_marginTop="20dp"
+            android:hint="Enter Amount"
+            android:background="@drawable/edittext_backg"
+            android:layout_marginRight="15dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/red"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OR"
+                android:layout_marginHorizontal="10dp"
+                android:textColor="@color/colorPrimaryDark"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/red"/>
+
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/bt_scan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Scan QR Code"
+            android:textAllCaps="false"
+            android:padding="5dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/red"/>
+
+        <View
+            android:layout_width="80dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:background="@color/red"/>
+
+
+        <Button
+            android:id="@+id/bt_wallet"
+            android:layout_width="140dp"
+            android:layout_height="35dp"
+            android:text="Transfer"
+            android:textAllCaps="false"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/button_back"
+            android:textColor="@color/white"/>
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/red"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wallet to Bank Transfer"
+                android:textStyle="bold"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/colorPrimaryDark"/>
+
+
+            <EditText
+                android:id="@+id/et_benid1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:editable="false"
+                android:maxLines="1"
+                android:layout_marginTop="20dp"
+                android:hint="Enter Beneficiary Nick Name"
+                android:background="@drawable/edittext_backg"
+                android:layout_marginRight="15dp"/>
+
+            <EditText
+                android:id="@+id/et_amount2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:layout_marginTop="10dp"
+                android:hint="Enter Amount"
+                android:inputType="number"
+                android:background="@drawable/edittext_backg"
+                android:layout_marginRight="15dp"/>
+
+
+            <EditText
+                android:id="@+id/et_name1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:padding="10dp"
+                android:editable="false"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:layout_marginTop="10dp"
+                android:hint="Enter Name"
+                android:background="@drawable/edittext_backg"
+                android:layout_marginRight="15dp"/>
+
+
+            <Button
+                android:id="@+id/bt_name1"
+                android:layout_width="140dp"
+                android:layout_height="35dp"
+                android:text="Transfer"
+                android:textAllCaps="false"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/button_back"
+                android:textColor="@color/white"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

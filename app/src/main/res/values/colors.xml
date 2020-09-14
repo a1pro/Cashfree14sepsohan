@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">@color/white</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="black">#0A0B0B</color>
+    <color name="white">#fff</color>
+    <color name="red">#AD0303</color>
+
+    <color name="windowBackground">#F3F3F3</color>
+
+    <color name="card_text_color">#FFFFFF</color>
+    <color name="card_label_color">#D4D9DC</color>
+    <color name="card_cvv_color">#383838</color>
+    <color name="CTA_text">#FFFFFF</color>
+    <color name="CTA_bg">#56CF87</color>
+
+
+    <color name="paytm_blue">#047DD6</color>
+    <color name="view_line">#A7ADB2</color>
+    <color name="colorAccentRed">#FF6E40</color>
+
+    <array name="array_dot_active">
+        <item>@color/colorAccentRed</item>
+        <item>@color/colorAccentRed</item>
+        <item>@color/colorAccentRed</item>
+        <item>@color/colorAccentRed</item>
+    </array>
+    <array name="array_dot_inactive">
+        <item>@color/view_line</item>
+        <item>@color/view_line</item>
+        <item>@color/view_line</item>
+        <item>@color/view_line</item>
+    </array>
+    <array name="array_dot_inactive2">
+        <item>@color/card_cvv_color</item>
+        <item>@color/card_cvv_color</item>
+        <item>@color/card_cvv_color</item>
+        <item>@color/card_cvv_color</item>
+    </array>
+
+
+
+</resources>

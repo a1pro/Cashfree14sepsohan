@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "301934694663",
+    "firebase_url": "https://cashfree-6dbe7.firebaseio.com",
+    "project_id": "cashfree-6dbe7",
+    "storage_bucket": "cashfree-6dbe7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:301934694663:android:87b8bf44715b50002ff5a2",
+        "android_client_info": {
+          "package_name": "com.app.cashfree"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "301934694663-n36r9abofu3u3gonpr7p4n5e8rl8lbu4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.cashfree",
+            "certificate_hash": "ee48790b56655b9f247424b3c9439b39ad5d7bbd"
+          }
+        },
+        {
+          "client_id": "301934694663-7uc352s175n2je6n3fn10g9od1kr3uco.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBSBvAU8toAGAqmQ3RiZ2W7dkqyl1cweQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "301934694663-7uc352s175n2je6n3fn10g9od1kr3uco.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

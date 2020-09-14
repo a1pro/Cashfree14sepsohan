@@ -1,0 +1,204 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".Activities.AddCardActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:background="@mipmap/blck_leftarrow"
+            android:layout_margin="15dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Card"
+            android:textSize="22sp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/black"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/rl_card"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:layout_marginTop="20dp"
+
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/activity_horizontal_margin">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               android:layout_gravity="center"
+                android:src="@mipmap/add_card" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/black"
+                android:text="Link your NCB Card"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+               android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:text="Card Type :"/>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Debit"/>
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Credit"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivType"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/items_inbetween_small"
+            android:layout_marginBottom="@dimen/items_inbetween_small"
+            android:layout_width="@dimen/cardtype_width"
+            android:layout_height="@dimen/cardtype_height"
+            />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/et_card_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:padding="15dp"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:background="@drawable/edittext_backg"
+        android:hint="Card number"
+        android:inputType="number"
+        android:imeOptions="actionNext"
+        android:paddingLeft="2dp" />
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:padding="15dp"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:background="@drawable/edittext_backg"
+        android:hint="Fullname"
+        android:inputType="textPersonName"
+        android:imeOptions="actionNext"
+        android:paddingLeft="2dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/et_expired_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:padding="15dp"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:background="@drawable/edittext_backg"
+        android:hint="Expired date"
+        android:inputType="textEmailAddress"
+        android:imeOptions="actionNext"
+        android:paddingLeft="2dp" />
+        <EditText
+            android:id="@+id/et_cvv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:paddingRight="30dp"
+            android:paddingStart="30dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:gravity="right"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:background="@drawable/edittext_backg"
+            android:hint="CVV"
+            android:inputType="number"
+            android:imeOptions="actionDone"
+            android:paddingLeft="2dp" />
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/bt_continue"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+      android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_back"
+        android:text="CONTINUE"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
